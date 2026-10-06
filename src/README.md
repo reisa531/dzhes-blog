@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: house
-heroImage: /avatar.jpg
+heroImage: /hero-avatar.png
 heroText: dzhes
 heroFullScreen: true
 bgImage: /assets/images/cover1.jpg
