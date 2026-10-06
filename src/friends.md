@@ -7,7 +7,7 @@ index: false
 
 # 朋友们
 
-互联网上还愿意自己写东西的人不多了，这里放一些我常读的站点。
+
 
 ## 友情链接
 
@@ -40,7 +40,7 @@ index: false
 - 一句话介绍
 - 图标地址（可选）
 
-邮箱：jiangdzh2026@shanghaitech.edu.cn
+邮箱：reisa531@outlook.com
 
 ## 本站信息
 

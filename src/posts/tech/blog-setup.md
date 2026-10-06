@@ -24,8 +24,6 @@ sticky: true
 
 ## 三层配置链
 
-改配置之前得先知道改哪一层：
-
 ```text
 src/.vuepress/config.ts   站点级：base / lang / title / description
   └── theme.ts            主题级：hostname / author / logo / repo / blog / plugins
