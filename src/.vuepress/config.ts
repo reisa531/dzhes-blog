@@ -6,11 +6,11 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "博客演示",
-  description: "vuepress-theme-hope 的博客演示",
+  title: "dzhes's Blog",
+  description: "dzhes 的个人博客：技术笔记与生活记录。",
 
   theme,
 
-  // 和 PWA 一起启用
-  // shouldPrefetch: false,
+  // PWA 插件接管资源缓存，关闭预获取避免重复请求
+  shouldPrefetch: false,
 });
