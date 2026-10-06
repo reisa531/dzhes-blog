@@ -4,9 +4,9 @@ layout: Blog
 icon: house
 title: 博客主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
+heroText: dzhes
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 如果错过了太阳时你流泪了，那么你也要错过群星了。
 projects:
   - icon: folder-open
     name: 项目名称
@@ -38,7 +38,7 @@ projects:
     desc: 自定义详细介绍
     link: https://你的自定义链接
 
-footer: 自定义你的页脚文字
+footer: 这里鲜有人迹。
 ---
 
 这是一个博客主页的案例。
