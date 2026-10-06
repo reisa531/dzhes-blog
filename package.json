@@ -11,6 +11,7 @@
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vuepress/bundler-vite": "2.0.0-rc.31",
     "@vuepress/plugin-pwa": "^2.0.0-rc.137",
     "@vuepress/plugin-search": "^2.0.0-rc.137",
