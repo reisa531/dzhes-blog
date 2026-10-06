@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://www.dzhes.xyz",
   },
 
-  logo: "/logo.svg",
+  logo: "/avatar.jpg",
 
   repo: "reisa531/dzhes-blog",
 
@@ -29,6 +29,8 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
+    // 博主头像（博客信息栏 / 文章作者信息）
+    avatar: "/avatar.jpg",
     description: "记录技术，也记录生活。",
     intro: "/intro.html",
     // 社交链接：只保留有真实地址的条目，未填写的保持注释，避免出现死链。
