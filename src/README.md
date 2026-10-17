@@ -26,4 +26,4 @@ projects:
 footer: 这里鲜有人迹。
 ---
 
-记录技术，也记录生活。
+I have nothing to offer but blood, toil, tears and sweat.

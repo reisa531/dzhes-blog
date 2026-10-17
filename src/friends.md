@@ -14,12 +14,18 @@ index: false
 <div class="friend-links">
 
 <VPCard
-  name="dzhes's Blog"
-  desc="本站：技术笔记与生活记录"
-  logo="/logo.svg"
-  link="https://www.dzhes.xyz/"
+  name="GeekPie_"
+  desc="明月有情还顾我，清风无意不留人"
+  logo="https://jerry-1031.github.io/images/avatar.png"
+  link="https://jerry-1031.github.io/"
 />
 
+<VPCard
+  name="Jerry1031"
+  desc="上海科技大学 GeekPie 学生社团"
+  logo="https://geekpie.club/icon.png"
+  link="https://geekpie.club/"
+/>
 <!-- 添加友链：复制下面这段，替换成对方的名称 / 描述 / 图标 / 链接
 <VPCard
   name="对方站点名"
