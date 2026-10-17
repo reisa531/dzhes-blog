@@ -1,9 +1,24 @@
-import { Analytics } from "@vercel/analytics/vue";
-import { defineClientConfig } from "vuepress/client";
+import { computeRoute, inject, pageview } from "@vercel/analytics";
+import { onMounted, watch } from "vue";
+import { defineClientConfig, useRoute } from "vuepress/client";
 
 export default defineClientConfig({
-  // Vercel Web Analytics
-  // 挂到应用根节点（组件本身 render 返回 null）。它内部用 vue-router 的 route 变化来上报
-  // pageview，所以 SPA 内的跳转也会被统计，比只放一个 <script> 标签更准。
-  rootComponents: [Analytics],
+  setup() {
+    const route = useRoute();
+
+    onMounted(() => {
+      // 使用 VuePress 的路由实例，避免 Analytics Vue 组件依赖不同版本的 vue-router。
+      inject({ disableAutoTrack: true });
+      watch(
+        route,
+        () => {
+          pageview({
+            route: computeRoute(route.path, route.params),
+            path: route.path,
+          });
+        },
+        { immediate: true },
+      );
+    });
+  },
 });
