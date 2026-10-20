@@ -1,9 +1,15 @@
-import { Analytics } from "@vercel/analytics/vue";
+import { inject, pageview } from "@vercel/analytics";
 import { defineClientConfig } from "vuepress/client";
 
 export default defineClientConfig({
-  // Vercel Web Analytics
-  // 挂到应用根节点（组件本身 render 返回 null）。它内部用 vue-router 的 route 变化来上报
-  // pageview，所以 SPA 内的跳转也会被统计，比只放一个 <script> 标签更准。
-  rootComponents: [Analytics],
+  enhance({ router }) {
+    if (typeof window === "undefined") return;
+
+    // 不能用 @vercel/analytics/vue：它要求 vue-router v4，而 VuePress 用的是 v5，
+    // Vercel 全新安装时解析不到依赖会构建失败。这里直接注入脚本，跟随 VuePress 路由上报。
+    inject({ framework: "vue", disableAutoTrack: true });
+    router.afterEach((to) => {
+      pageview({ path: to.path, route: to.path });
+    });
+  },
 });

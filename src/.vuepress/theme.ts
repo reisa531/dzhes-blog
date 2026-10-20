@@ -64,6 +64,7 @@ export default hopeTheme({
 
   // 此处开启了很多功能用于演示，你应仅保留用到的功能。
   markdown: {
+    alert: true,
     align: true,
     attrs: true,
     codeTabs: true,
@@ -98,13 +99,10 @@ export default hopeTheme({
     tasklist: true,
     vPre: true,
 
-    // 取消注释它们如果你需要 TeX 支持
-    // math: {
-    //   // 启用前安装 katex
-    //   type: "katex",
-    //   // 或者安装 @mathjax/src
-    //   type: "mathjax",
-    // },
+    // LaTeX 公式，构建时用 KaTeX 渲染
+    math: {
+      type: "katex",
+    },
 
     // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
     // revealjs: {
@@ -122,8 +120,8 @@ export default hopeTheme({
     // 在启用之前安装 flowchart.ts
     // flowchart: true,
 
-    // 在启用之前安装 mermaid
-    // mermaid: true,
+    // Mermaid 图表，按需打包
+    mermaid: true,
 
     // playground: {
     //   presets: ["ts", "vue"],

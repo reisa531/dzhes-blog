@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章编辑器 · dzhes's Blog</title>
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar">
+        <div class="sidebar-head">
+          <h1>文章编辑器</h1>
+          <input id="filter" type="search" placeholder="筛选文章…" autocomplete="off" />
+        </div>
+        <ul id="file-list"></ul>
+      </aside>
+      <main class="workbench">
+        <header class="toolbar">
+          <div class="file-info">
+            <strong id="current-file">未选择文件</strong>
+            <span id="status">从左侧选择一篇 src/posts 下的文章</span>
+          </div>
+          <button id="save" type="button" disabled>保存 <kbd>Ctrl</kbd>+<kbd>S</kbd></button>
+        </header>
+        <div class="panes">
+          <div id="editor"></div>
+          <article id="preview" class="preview markdown-body"></article>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>
