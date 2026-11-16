@@ -14,14 +14,14 @@ index: false
 <div class="friend-links">
 
 <VPCard
-  name="GeekPie_"
+  name="Jerry1031"
   desc="明月有情还顾我，清风无意不留人"
   logo="https://jerry-1031.github.io/images/avatar.png"
   link="https://jerry-1031.github.io/"
 />
 
 <VPCard
-  name="Jerry1031"
+  name="GeekPie_"
   desc="上海科技大学 GeekPie 学生社团"
   logo="https://geekpie.club/icon.png"
   link="https://geekpie.club/"
